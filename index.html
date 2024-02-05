@@ -17,10 +17,12 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'common-color': '#FF4240',
                     }
                 }
             }
         }
+    </script>
     </script>
 
     <!-- font awesome -->
@@ -36,18 +38,103 @@
             font-family: 'Manrope', sans-serif;
         }
     </style>
-
-
 </head>
 
 <body>
     <header>
-
+        <nav class="container mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Homeeee</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-4xl font-extrabold">Hockey<span class="text-common-color">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-10 text-base-content">
+                        <li class="hover:text-common-color"><a>Home</a></li>
+                        <li class="hover:text-common-color"><a>About</a></li>
+                        <li class="hover:text-common-color"><a>Pages</a></li>
+                        <li class="hover:text-common-color"><a>Blog</a></li>
+                        <li class="hover:text-common-color"><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <i class="fa-solid fa-magnifying-glass px-4"></i>
+                    <a class="btn btn-error bg-common-color text-xl font-bold text-white">Get
+                        Ticket</a>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main>
+
+
+    <main class="container mx-auto">
         <!-- Profession Hockeys Club -->
 
         <!-- Program Sections -->
+        <section class=" my-6 mx-4 lg:mx-28">
+                <h2 class="text-center text-5xl font-extrabold pb-4">Program Sections</h2>
+                <p class="pb-4 lg:px-20 text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
+                    facilis sed molestias fugiat consectetur
+                    beatae fuga quo at praesentium mollitia id, veniam adipisci ab velit, blanditiis suscipit. Numquam,
+                    repellendus aliquid.
+                </p>
+            <!-- card container -->
+            <div class="grid gap-4 grid-cols-1 justify-center items-center lg:grid-cols-2">
+                <!-- 1st card -->
+                <div class="card shadow-xl image-full">
+                    <figure><img src="./images/2.png" alt="" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Junior Program</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, recusandae.</p>
+                        <div class="card-actions justify-start">
+                            <button class="btn btn-error bg-common-color">Registerr Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd card -->
+                <div class="card shadow-xl image-full">
+                    <figure><img src="./images/3.png" alt="" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Teenager Program</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, recusandae.</p>
+                        <div class="card-actions justify-start">
+                            <button class="btn btn-error bg-common-color">Registerr Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd card -->
+                <div class="card shadow-xl image-full lg:col-span-2 ">
+                    <figure><img src="./images/4.png" alt="" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Professional Program</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, recusandae.</p>
+                        <div class="card-actions justify-start">
+                            <button class="btn btn-error bg-common-color">Registerr Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
         <!-- Our New Products -->
 
