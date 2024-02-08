@@ -41,13 +41,14 @@
     </style>
 </head>
 
-<body>
+<body class="font-manrope">
     <header class="w-5/6 mx-auto">
+        <!-- Navbar -->
         <nav>
-            <!-- <div class="navbar bg-base-100">
+            <div class="navbar py-2 px-0 gap-10 bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -55,18 +56,19 @@
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Homeeee</a></li>
+                            class="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
                             <li><a>About</a></li>
                             <li><a>Pages</a></li>
                             <li><a>Blog</a></li>
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="text-4xl font-extrabold">Hockey<span class="text-common-color">’</span>s</a>
+                    <h1 class="text-2xl lg:text-4xl text-primary-color font-extrabold">Hockey<span
+                            class="text-common-color">’</span>s</h1>
                 </div>
-                <div class="navbar-center  lg:flex">
-                    <ul class="menu menu-horizontal px-10 text-base-content">
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-10 text-[#424247]">
                         <li class="hover:text-common-color"><a>Home</a></li>
                         <li class="hover:text-common-color"><a>About</a></li>
                         <li class="hover:text-common-color"><a>Pages</a></li>
@@ -74,55 +76,88 @@
                         <li class="hover:text-common-color"><a>Contact</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end">
-                    <i class="fa-solid fa-magnifying-glass px-4"></i>
-                    <a class="btn btn-error bg-common-color text-xl font-bold text-white">Get
+                <div class="navbar-end text-end">
+                    <i class="fa-solid fa-magnifying-glass hidden lg:inline-block px-2"></i>
+                    <a class="btn btn-error px-2 bg-common-color text-base lg:text-xl font-bold text-white">Get
                         Ticket</a>
                 </div>
-            </div> -->
+            </div>
         </nav>
-    </header>
 
+        <!-- Banner -->
+        <div class="relative">
+            <div class="carousel w-full mt-6">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./images/1-1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./images/1-2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-primary-color text-white mt-5 p-5 lg:w-2/5 rounded-lg lg:absolute bottom-9 right-9 ">
+                <h3 class="text-xl font-bold">Meet all the heroes from the field</h3>
+                <p class="text-[#FFFFFF99]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                    placerat dolor. Purus urna in
+                    sit nullam proin. </p>
+            </div>
+        </div>
+    </header>
 
     <main class="w-5/6 mx-auto">
         <!-- Profession Hockeys Club -->
-        <section class="">
+        <section>
             <hr class="mt-10 border-dashed border-gray-300">
-            <div class="my-4">
-                <h2 class="text-center text-4xl font-extrabold pb-4">Professional Hockeys Club</h2>
-                <p class="pb-2 lg:px-52 text-center text-primary-color opacity-60 font-medium">Dit amet consectetur.
+            <div class="my-6">
+                <h1 class="text-center text-2xl lg:text-4xl text-primary-color font-extrabold">Professional Hockeys Club
+                </h1>
+                <p class="pt-3 lg:px-52 text-center text-primary-color opacity-60 font-medium">Dit amet consectetur.
                     Condimentum
                     dignissim adipiscing aliquam
                     turpis placerat dolor. Purus urna in sit nullam proin.
                 </p>
             </div>
             <hr class="mb-6 border-dashed border-gray-300">
-            <div class="w-4/5 mx-auto flex flex-col lg:flex-row justify-evenly gap-5 ">
-                <div class=" p-4 text-center">
-                    <div class="mx-10 radial-progress rotate-90 text-common-color" style="--value:87;"
-                        role="progressbar"><span class="-rotate-90 text-primary-color">87%</span>
+            <div class="w-4/5 mx-auto flex flex-col lg:flex-row justify-evenly gap-3">
+                <div class="text-center">
+                    <div class="mb-3 radial-progress rotate-90 text-common-color" style="--value:87;"
+                        role="progressbar"><span class="-rotate-90 text-primary-color text-xl font-bold">87%</span>
                     </div>
 
                     <h2 class="text-xl font-semibold text-primary-color">Prayer Facility</h2>
                     <p class="text-primary-color opacity-60">Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
-                <div class=" p-4 text-center">
-                    <div class="radial-progress rotate-90 text-[#49D293]" style="--value:95;" role="progressbar"><span
-                            class="-rotate-90 text-primary-color">95%</span>
+                <div class="text-center">
+                    <div class="mb-3 radial-progress rotate-90 text-[#49D293]" style="--value:95;" role="progressbar">
+                        <span class="-rotate-90 text-primary-color text-xl font-bold">95%</span>
                     </div>
                     <h2 class="text-xl font-semibold text-primary-color">Experienced Coach</h2>
                     <p class="text-primary-color opacity-60">Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
-                <div class=" p-4 text-center">
-                    <div class="radial-progress rotate-90 text-warning" style="--value:90;" role="progressbar"><span
-                            class="-rotate-90 text-primary-color">90%</span>
+                <div class="text-center">
+                    <div class="mb-3 radial-progress rotate-90 text-warning" style="--value:90;" role="progressbar">
+                        <span class="-rotate-90 text-primary-color text-xl font-bold">90%</span>
                     </div>
                     <h2 class="text-xl font-semibold text-primary-color">Senior Player</h2>
                     <p class="text-primary-color opacity-60">Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
-                <div class=" p-4 text-center">
-                    <div class="radial-progress rotate-90 text-[#4C8DF1]" style="--value:80;" role="progressbar"><span
-                            class="-rotate-90 text-primary-color">80%</span>
+                <div class="text-center">
+                    <div class="mb-3 radial-progress rotate-90 text-[#4C8DF1]" style="--value:80;" role="progressbar">
+                        <span class="-rotate-90 text-primary-color text-xl font-bold">80%</span>
                     </div>
                     <h2 class="text-xl font-semibold text-primary-color">Training Ground</h2>
                     <p class="text-primary-color opacity-60">Amet consectetur. Condimentum dignissim adipiscing .</p>
@@ -131,11 +166,11 @@
         </section>
 
         <!-- Program Sections -->
-        <section class="">
+        <section>
             <hr class="mt-10 border-dashed border-gray-300">
-            <div class="my-4">
-                <h2 class="text-center text-4xl font-extrabold pb-4">Program Sections</h2>
-                <p class="pb-2 lg:px-52 text-center text-primary-color opacity-60 font-medium">Dit amet consectetur.
+            <div class="py-6">
+                <h1 class="text-center text-2xl lg:text-4xl text-primary-color font-extrabold">Program Sections</h1>
+                <p class="pt-3 lg:px-52 text-center text-primary-color opacity-60 font-medium">Dit amet consectetur.
                     Condimentum
                     dignissim adipiscing aliquam
                     turpis
@@ -187,11 +222,11 @@
         </section>
 
         <!-- Our New Products -->
-        <section class="">
+        <section>
             <hr class="mt-10 border-dashed border-gray-300">
-            <div>
-                <h2 class="text-center text-4xl font-extrabold py-4">Our New Products</h2>
-                <p class="pb-4 lg:px-52 text-center text-primary-color opacity-60 font-medium">Dit amet consectetur.
+            <div class="py-6">
+                <h1 class="text-center text-2xl lg:text-4xl text-primary-color font-extrabold">Our New Products</h1>
+                <p class="pt-3 lg:px-52 text-center text-primary-color opacity-60 font-medium">Dit amet consectetur.
                     Condimentum
                     dignissim adipiscing aliquam
                     turpis
@@ -326,11 +361,11 @@
         </section>
 
         <!-- Clients Question -->
-        <section class="">
+        <section>
             <hr class="mt-10 border-dashed border-gray-300">
-            <div>
-                <h2 class="text-center text-4xl font-extrabold py-4">Clients Question</h2>
-                <p class="pb-4 lg:px-52 text-center text-primary-color opacity-60 font-medium">Dit amet consectetur.
+            <div class="py-6">
+                <h1 class="text-center text-2xl lg:text-4xl text-primary-color font-extrabold">Clients Question</h1>
+                <p class="pt-3 lg:px-52 text-center text-primary-color opacity-60 font-medium">Dit amet consectetur.
                     Condimentum
                     dignissim adipiscing aliquam
                     turpis placerat dolor. Purus urna in sit nullam proin.
@@ -340,13 +375,13 @@
             <!-- section content -->
             <div class="w-auto m-5">
                 <div class="hero-content flex-col lg:flex-row">
-                    <img src="./images/11.png" class="max-w-sm rounded-lg" />
+                    <img src="./images/11.png" class="max-w-sm rounded-lg mx-2" />
                     <!-- Questions -->
                     <div class="space-y-1">
                         <!-- Q 1 -->
                         <div class="collapse collapse-plus">
                             <input type="radio" name="my-accordion-3" />
-                            <div class="collapse-title text-xl font-medium">
+                            <div class="collapse-title text-xl font-semibold">
                                 Our Equipment
                             </div>
                             <div class="collapse-content">
@@ -359,7 +394,7 @@
                         <!-- Q 2 -->
                         <div class="collapse collapse-plus">
                             <input type="radio" name="my-accordion-3" />
-                            <div class="collapse-title text-xl font-medium">
+                            <div class="collapse-title text-xl font-semibold">
                                 Hockey Training </div>
                             <div class="collapse-content">
                                 <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis
@@ -370,7 +405,7 @@
                         <!-- Q 3 -->
                         <div class="collapse collapse-plus">
                             <input type="radio" name="my-accordion-3" />
-                            <div class="collapse-title text-xl font-medium">
+                            <div class="collapse-title text-xl font-semibold">
                                 Private Lessons </div>
                             <div class="collapse-content">
                                 <p class="text-primary-color opacity-60">Dolor sit amet consectetur. Ut urna diam quis
@@ -382,7 +417,7 @@
                         <!-- Q 4 -->
                         <div class="collapse collapse-plus">
                             <input type="radio" name="my-accordion-3" />
-                            <div class="collapse-title text-xl font-medium">
+                            <div class="collapse-title text-xl font-semibold">
                                 Ski Touring </div>
                             <div class="collapse-content">
                                 <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis
@@ -393,7 +428,7 @@
                         <!-- Q 5 -->
                         <div class="collapse collapse-plus">
                             <input type="radio" name="my-accordion-3" />
-                            <div class="collapse-title text-xl font-medium">
+                            <div class="collapse-title text-xl font-semibold">
                                 Booking </div>
                             <div class="collapse-content">
                                 <p class="text-primary-color opacity-60">Dolor sit amet consectetur. Ut urna diam quis
@@ -405,7 +440,7 @@
                         <!-- Q 6 -->
                         <div class="collapse collapse-plus">
                             <input type="radio" name="my-accordion-3" />
-                            <div class="collapse-title text-xl font-medium">
+                            <div class="collapse-title text-xl font-semibold">
                                 Pricings </div>
                             <div class="collapse-content">
                                 <p class="text-primary-color opacity-60">Dolor sit amet consectetur. Ut urna diam quis
@@ -421,15 +456,15 @@
         <!-- Get In Touch -->
         <section class="mb-10">
             <hr class="mt-10 border-dashed border-gray-300">
-            <div>
-                <h2 class="text-center text-4xl font-extrabold py-4">Get In Touch</h2>
-                <p class="pb-4 lg:px-52 text-center text-primary-color opacity-60 font-medium">Dit amet consectetur.
+            <div class="py-6">
+                <h1 class="text-center text-2xl lg:text-4xl text-primary-color font-extrabold">Get In Touch</h1>
+                <p class="pt-3 lg:px-52 text-center text-primary-color opacity-60 font-medium">Dit amet consectetur.
                     Condimentum
                     dignissim adipiscing aliquam
                     turpis placerat dolor. Purus urna in sit nullam proin.
                 </p>
             </div>
-            <hr class="mb-5 border-dashed border-gray-300">
+            <hr class="mb-6 border-dashed border-gray-300">
 
             <!-- Section Content -->
             <div class="flex flex-col justify-between items-center gap-5 lg:flex-row">
@@ -481,7 +516,7 @@
                         <!-- <input class="bg-base-300 p-5 rounded-lg w-full h-40" type="text" name="" id="" placeholder="Message"> -->
                     </div>
                     <button
-                        class="btn btn-error text-white text-xl font-semibold bg-common-color row-span-1 col-span-2 mt-9 w-full">Send
+                        class="btn btn-error text-white text-xl font-semibold bg-common-color row-span-1 col-span-2 mt-7 w-full">Send
                         Message
                     </button>
                 </div>
@@ -497,41 +532,46 @@
             </div>
         </section>
     </main>
-    <footer class="grid grid-flow-row lg:grid-flow-col lg:items-start gap-8 lg:px-32 py-10 bg-accent-content text-white">
+    <!-- Footer -->
+    <footer
+        class="grid grid-flow-row lg:grid-flow-col lg:items-start gap-8 lg:px-32 py-10 bg-accent-content text-white">
         <aside class="text-center lg:text-start">
-            <h2 class="text-2xl font-extrabold">Get In Touch</h2>
-            <p class="my-2">Dit amet consectetur. Condimentum <br>adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit
+            <h2 class="text-2xl font-extrabold text-white">Get In Touch</h2>
+            <p class="my-2 text-[#FFFFFF99]">Dit amet consectetur. Condimentum <br>adipiscing aliquam turpis placerat
+                dolor. <br> Purus
+                urna in sit
                 nullam proin. </p>
-            <p> <i class="fa-regular fa-envelope" style="color: #FF4240;"> </i> hockeys@support.com <br> <span>
+            <p class="text-[#FFFFFF99]"> <i class="fa-regular fa-envelope" style="color: #FF4240;"> </i>
+                hockeys@support.com <br> <span>
                     <i class="fa-solid fa-phone" style="color: #FF4240;"> </i> (+62) 123-321-543
                 </span></p>
         </aside>
 
         <div class="flex flex-row justify-around">
             <nav class="flex flex-col gap-1">
-                <h6 class="footer-title">Company</h6>
-                <a class="link link-hover">About Us</a>
-                <a class="link link-hover">Leadership</a>
-                <a class="link link-hover">Careers</a>
-                <a class="link link-hover">News and Article</a>
-                <a class="link link-hover">Legal Notice</a>
+                <h6 class="text-white text-lg font-semibold">Company</h6>
+                <a class="link link-hover text-[#FFFFFF99]">About Us</a>
+                <a class="link link-hover text-[#FFFFFF99]">Leadership</a>
+                <a class="link link-hover text-[#FFFFFF99]">Careers</a>
+                <a class="link link-hover text-[#FFFFFF99]">News and Article</a>
+                <a class="link link-hover text-[#FFFFFF99]">Legal Notice</a>
             </nav>
             <nav class="flex flex-col gap-1">
-                <h6 class="footer-title">Support</h6>
-                <a class="link link-hover">Help Center</a>
-                <a class="link link-hover">FAQ</a>
-                <a class="link link-hover">Ticket Support</a>
-                <a class="link link-hover">Contact Us</a>
+                <h6 class="text-white text-lg font-semibold">Support</h6>
+                <a class="link link-hover text-[#FFFFFF99]">Help Center</a>
+                <a class="link link-hover text-[#FFFFFF99]">FAQ</a>
+                <a class="link link-hover text-[#FFFFFF99]">Ticket Support</a>
+                <a class="link link-hover text-[#FFFFFF99]">Contact Us</a>
             </nav>
         </div>
 
         <nav class="flex flex-col items-center lg:items-start gap-1">
-            <h6 class="footer-title">Services</h6>
-            <a class="link link-hover">Academy</a>
-            <a class="link link-hover">Group Lesson</a>
-            <a class="link link-hover">Private Lesson</a>
-            <a class="link link-hover">Hockeys for kids</a>
-            <a class="link link-hover">Hockeys for Adult</a>
+            <h6 class="text-white text-lg font-semibold">Services</h6>
+            <a class="link link-hover text-[#FFFFFF99]">Academy</a>
+            <a class="link link-hover text-[#FFFFFF99]">Group Lesson</a>
+            <a class="link link-hover text-[#FFFFFF99]">Private Lesson</a>
+            <a class="link link-hover text-[#FFFFFF99]">Hockeys for kids</a>
+            <a class="link link-hover text-[#FFFFFF99]">Hockeys for Adult</a>
         </nav>
     </footer>
 </body>
